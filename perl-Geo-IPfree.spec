@@ -1,5 +1,5 @@
 %define module 	Geo-IPfree
-%define version 0.4
+%define version 0.5
 %define release %mkrel 1
 
 Summary:	Look up country by IP Address
