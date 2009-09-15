@@ -1,25 +1,25 @@
-%define module 	Geo-IPfree
-%define version 0.6
-%define release %mkrel 1
+%define upstream_name 	 Geo-IPfree
+%define upstream_version 0.7
+
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
 
 Summary:	Look up country by IP Address
-Name: 		perl-%{module}
-Version: 	%{version}
-Release: 	%{release}
-Url:		http://search.cpan.org/dist/%{module}
-License:	GPL or Artistic
+License:	GPL+ or Artistic
+Url:		http://search.cpan.org/dist/%{upstream_name}
 Group:		Development/Perl
-Source0:	%{module}-%{version}.tar.bz2
-BuildRequires:	perl-devel
-BuildRoot: 	%{_tmppath}/%{name}-%{version}-buildroot
+Source0:	http://www.cpan.org/modules/by-module/Geo/%{upstream_name}-%{upstream_version}.tar.gz
+
 Buildarch:	noarch
+BuildRoot: 	%{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 Look up country of IP Address. This module make this off-line and 
 the DB of IPs is free & small. 
 
 %prep
-%setup -q -n %{module}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -40,4 +40,3 @@ rm -rf $RPM_BUILD_ROOT
 %doc README Changes
 %{perl_vendorlib}/Geo
 %{_mandir}/*/*
-
