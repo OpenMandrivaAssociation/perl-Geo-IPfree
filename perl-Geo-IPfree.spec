@@ -1,5 +1,5 @@
 %define upstream_name 	 Geo-IPfree
-%define upstream_version 0.8
+%define upstream_version 1.100470
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
