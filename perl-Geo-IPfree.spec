@@ -1,15 +1,15 @@
 %define upstream_name 	 Geo-IPfree
-%define upstream_version 1.111650
+%define upstream_version 1.131650
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Release:	1
 
 Summary:	Look up country by IP Address
 License:	GPL+ or Artistic
 Url:		http://search.cpan.org/dist/%{upstream_name}
 Group:		Development/Perl
-Source0:	http://www.cpan.org/modules/by-module/Geo/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Geo/Geo-IPfree-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildArch:	noarch
@@ -107,4 +107,5 @@ make test
 
 * Mon Sep 22 2003 Lenny Cartier <lenny@mandrakesoft.com> 0.2-1mdk
 - needed by w3perl
+
 
