@@ -1,5 +1,5 @@
 %define upstream_name 	 Geo-IPfree
-%define upstream_version 1.131650
+%define upstream_version 1.132870
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
@@ -107,5 +107,6 @@ make test
 
 * Mon Sep 22 2003 Lenny Cartier <lenny@mandrakesoft.com> 0.2-1mdk
 - needed by w3perl
+
 
 
