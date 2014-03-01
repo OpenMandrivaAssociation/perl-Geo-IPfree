@@ -1,5 +1,4 @@
-%define upstream_name 	 Geo-IPfree
-%define upstream_version 1.132870
+%define upstream_name 	 Geo-IPfree%define upstream_version 1.140470
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
@@ -9,7 +8,7 @@ Summary:	Look up country by IP Address
 License:	GPL+ or Artistic
 Url:		http://search.cpan.org/dist/%{upstream_name}
 Group:		Development/Perl
-Source0:	http://www.cpan.org/modules/by-module/Geo/Geo-IPfree-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Geo/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildArch:	noarch
@@ -23,7 +22,7 @@ the DB of IPs is free & small.
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
-%{__make}
+%make
 
 %check
 make test
@@ -107,6 +106,7 @@ make test
 
 * Mon Sep 22 2003 Lenny Cartier <lenny@mandrakesoft.com> 0.2-1mdk
 - needed by w3perl
+
 
 
 
