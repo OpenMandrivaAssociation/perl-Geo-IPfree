@@ -7,7 +7,7 @@ Release:	3
 
 Summary:	Look up country by IP Address
 License:	GPL+ or Artistic
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		https://search.cpan.org/dist/%{upstream_name}
 Group:		Development/Perl
 Source0:	http://www.cpan.org/modules/by-module/Geo/%{upstream_name}-%{upstream_version}.tar.gz
 
