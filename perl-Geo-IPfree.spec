@@ -11,6 +11,7 @@ Url:		https://search.cpan.org/dist/%{upstream_name}
 Group:		Development/Perl
 Source0:	http://www.cpan.org/modules/by-module/Geo/%{upstream_name}-%{upstream_version}.tar.gz
 
+BuildRequires:	make
 BuildRequires:	perl-devel
 BuildArch:	noarch
 
