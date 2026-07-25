@@ -1,15 +1,15 @@
 %define upstream_name 	 Geo-IPfree
-%define upstream_version 1.141670
+%define upstream_version 1.160001
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	Look up country by IP Address
 License:	GPL+ or Artistic
-Url:		https://search.cpan.org/dist/%{upstream_name}
+Url:		https://github.com/bricas/geo-ipfree
 Group:		Development/Perl
-Source0:	http://www.cpan.org/modules/by-module/Geo/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/A/AT/ATOOMIC/Geo-IPfree-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
